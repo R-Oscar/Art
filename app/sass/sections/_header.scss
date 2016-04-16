@@ -1,0 +1,108 @@
+.header-top-container {
+	@include container-fixed(0);
+	background-color: $black;
+}
+
+.header-top {
+	@extend .container;
+}
+
+.header-nav {
+	@extend .navbar;
+}
+
+.header-nav-list {
+	@extend .nav;
+	@extend .navbar-nav;
+}
+
+.header-search-form {
+	@extend .navbar-form;
+	@extend .navbar-right;
+}
+
+.search-form-container {
+	@extend .form-group;
+	position: relative;
+}
+
+.header-search-form__search {
+	@extend .form-control;
+	border: none;
+	@include border-radius(0px);
+	padding-right: 45px;
+}
+
+.header-search-form__button {
+	border: 1px solid transparent;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: $input-height-base;
+	background-color: $input-bg;
+	outline: none;
+	color: $black;
+	width: 45px;
+}
+
+.header-bottom-container {
+	@include container-fixed(0);
+}
+
+$grid-columns: 36;
+
+.header-bottom {
+	@include make-row(0);
+}
+
+.lang {
+	text-transform: uppercase;
+	
+	> a {
+		color: $black;
+
+		&:hover {
+			color: $black;
+			text-decoration: none;
+		}
+	}
+}
+
+.header-lang-container {
+	@include make-xs-column(1);
+	padding: 7px 14px;
+}
+
+.header-lang-list {
+	padding: 0;
+	list-style-type: none;
+}
+
+.lang-active {
+	font-weight: bold;
+}
+
+.header-info-container {
+	@extend .container;
+}
+
+$grid-columns: 12;
+
+.header-info {
+	@include make-row();
+}
+
+.header-info-list {
+	list-style-type: none;
+	padding: 23px 0;
+}
+
+.header-info__item {
+	@include make-sm-column(4);
+	text-align: center;
+}
+
+.header-info__item__number {
+	font-weight: bold;
+	margin-right: 3px;
+}

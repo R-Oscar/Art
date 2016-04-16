@@ -1,0 +1,32 @@
+- var menu_items = ["My account", "Карта мира"]
+-
+	var stats_items = {
+		"Картин": 15685,
+		"Художников": 1000,
+		"Галерей": 500
+	}
+
+header.header-top-container
+		.header-top
+			nav.header-nav
+				ul.header-nav-list
+					each item in menu_items
+						li
+							a(href="#")= item
+				form(role="search").header-search-form
+					.search-form-container
+						input(type="text").header-search-form__search
+						button(type="submit").header-search-form__button Поиск
+header.header-bottom-container
+	.header-bottom
+		.header-lang-container
+			ul.header-lang-list
+				li.lang.lang-active Ru
+				li.lang
+					a(href="#") En
+		.header-info-container
+			ul.header-info-list
+				each value, key in stats_items
+					li.header-info__item
+						span.header-info__item__number #{value}
+						| #{key} на сайте
