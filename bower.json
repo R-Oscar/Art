@@ -2,6 +2,13 @@
   "name": "project2",
   "version": "1.0",
   "dependencies": {
-    "bootstrap-sass": "^3.3.6"
+    "bootstrap-sass": "^3.3.6",
+    "isotope": "^2.2.2"
+  },
+  "overrides": {
+    "isotope": {
+      "main": "dist/isotope.pkgd.min.js",
+      "dependencies": {}
+    }
   }
 }

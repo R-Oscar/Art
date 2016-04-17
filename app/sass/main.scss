@@ -1,8 +1,11 @@
 @import "compass";
 // @import "core/_fonts";
 @import "core/_customVariables";
-// @import "core/_mixins";
+@import "core/_mixins";
+
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap-compass";
 // @import "../../bower_components/font-awesome/scss/font-awesome";
 @import "sections/_header";
+@import "sections/_content";
+@import "sections/_footer";

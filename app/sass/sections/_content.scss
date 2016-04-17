@@ -1,0 +1,91 @@
+.content {
+	@extend .container;
+}
+
+.content-row {
+	@include make-row();
+}
+
+.content-column {
+	@include make-sm-column(4);
+	margin: 15px 0;
+}
+
+.content-column-2x {
+	@include make-sm-column(8);
+}
+
+.content-img-placeholder {
+	width: 100%;
+	height: 100%;
+	background-color: #959595;
+	position: relative;
+
+	&:hover {
+		.content-img-data {
+			@include opacity(1);
+			visibility: visible;
+		}
+	}
+}
+
+.content-img-data {
+	@include transition(opacity, .25s);
+	@include opacity(0);
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: $white;
+	background-color: rgba(0, 0, 0, .6);
+	width: 100%;
+	height: 100%;
+	padding: 5px 25px;
+
+	.content-heading {
+		.content-painting {
+			font-weight: bold;
+		}
+
+		.content-artist {
+			font-style: italic;
+		}
+
+		border-bottom: 1px solid $white;
+	}
+
+	.content-info {
+		font-size: 8px;
+	}
+}
+
+.content-star-container {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.content-star {
+	width: 100%;
+}
+
+.content-bottom-row {
+	@include make-row();
+	margin-top: 50px;
+	text-align: right;
+}
+
+.content-to-the-top {
+	@include make-sm-column(12);
+	display: block;
+	color: $black;
+
+	&:hover {
+		text-decoration: none;
+		color: $black;
+	}
+}
+
+.content-arrow {
+	background-image: url(../../images/icons/arrow-top.png);
+	width: 31px;
+}

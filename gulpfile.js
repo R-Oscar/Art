@@ -33,7 +33,7 @@ gulp.task("images", function() {
 gulp.task("js", function() {
 	return gulp.src(bowerFiles("**/*.js").concat(["app/js/**/*.js"]))
 				.pipe(plugins.concat('app.js'))
-				.pipe(plugins.uglify())
+				// .pipe(plugins.uglify())
 				.pipe(gulp.dest("dist/js/"));
 });
 

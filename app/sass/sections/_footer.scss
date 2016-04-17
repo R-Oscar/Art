@@ -1,0 +1,26 @@
+.footer-container {
+	@extend .header-top-container;
+    margin-top: 10px;
+}
+
+.footer {
+	@extend .container;
+}
+
+.footer-nav {
+	@extend .navbar;
+}
+
+.footer-nav-list {
+	@extend .nav;
+	@extend .navbar-nav;
+
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+    float:none;
+
+    > li {
+    	margin: 0 76px;
+    }
+}

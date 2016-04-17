@@ -1,0 +1,9 @@
+- var footer_menu = ["Terms of use", "Privacy", "FAQ & Support", "Imprint", "Contact"]
+
+footer.footer-container
+	.footer
+		nav.footer-nav
+			ul.footer-nav-list
+				each item in footer_menu
+					li
+						a(href="#")= item
