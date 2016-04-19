@@ -9,3 +9,23 @@
 @import "sections/_header";
 @import "sections/_content";
 @import "sections/_footer";
+
+html, body {
+	height: 100%;
+}
+
+.wrapper {
+	margin-bottom: -50px;
+	min-height: 100%;
+
+	&:after {
+		content: "";
+		display: block;
+		height: 50px;
+	}
+}
+
+.site-footer {
+	height: 50px;
+	background-color: black;
+}
